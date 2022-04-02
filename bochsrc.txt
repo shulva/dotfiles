@@ -1,7 +1,14 @@
 megs: 32   #memory
-romimage: file=/usr/share/bochs/BIOS-bochs-latest  # bios
-vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest  # vga-bios 显存
+
+# bios
+romimage: file=/usr/share/bochs/BIOS-bochs-latest  
+
+# vga-bios 显示
+vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest  
+
+# we need a floppy disk image with GRUB preloaded onto it
 floppya : 1_44=/dev/loop0, status=inserted
+
 boot: a
 log: /home/lrh_shulva/LRHos/bochs.out
 mouse : enabled=0
