@@ -1,0 +1,11 @@
+megs: 32   #memory
+romimage: file=/usr/share/bochs/BIOS-bochs-latest  # bios
+vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest  # vga-bios 显存
+floppya : 1_44=/dev/loop0, status=inserted
+boot: a
+log: /home/lrh_shulva/LRHos/bochs.out
+mouse : enabled=0
+keyboard: keymap=/usr/share/bochs/keymaps/x11-pc-us.map
+clock :sync=realtime
+cpu : ips=500000
+
