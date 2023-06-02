@@ -73,7 +73,6 @@ set mouse+=a
 "my customization:"
 hi Comment ctermfg =green
 
-set hlsearch
 hi Search ctermbg=Green
 hi Search ctermfg=Black
 
@@ -84,18 +83,29 @@ set tabstop=4
 set shiftwidth=4
 
 set rtp+=/home/shulva/.local/lib/python3.8/site-packages/powerline/bindings/vim/
-set laststatus=2 "vim 状态栏数量为2"
+set laststatus=2"
 set t_Co=256
 
+"from https://ruanyifeng.com/blog/2018/09/vimrc.htmlset " 
+set showmode " 显示当前模式
+set showcmd  " 在底部显示当前键入的指令
+filetype indent on " 开启文件类型检查，并且载入与该类型对应的缩进规则(例如py文件的缩进)。
+set encoding=utf-8
+set cursorline "当前行高亮
+set autoindent "下一行缩进会和上一行相同
+set wrap " 自动折行
+set linebreak " 不会在单词内部折行
+set ruler " 显示当前光标位置
+set showmatch " 括号匹配
 
 
-
-nnoremap <Left>  :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up>    :echoe "Use k"<CR>
-nnoremap <Down>  :echoe "Use j"<CR>
+" i think behind is useless, so i comment them	
+" nnoremap <Left>  :echoe "Use h"<CR>
+" nnoremap <Right> :echoe "Use l"<CR>
+" nnoremap <Up>    :echoe "Use k"<CR>
+" nnoremap <Down>  :echoe "Use j"<CR>
 " ...and in insert mode
-inoremap <Left>  <ESC>:echoe "Use h"<CR>
-inoremap <Right> <ESC>:echoe "Use l"<CR>
-inoremap <Up>    <ESC>:echoe "Use k"<CR>
-inoremap <Down>  <ESC>:echoe "Use j"<CR>
+" inoremap <Left>  <ESC>:echoe "Use h"<CR>
+" inoremap <Right> <ESC>:echoe "Use l"<CR>
+" inoremap <Up>    <ESC>:echoe "Use k"<CR>
+" inoremap <Down>  <ESC>:echoe "Use j"<CR>

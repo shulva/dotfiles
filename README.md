@@ -1,2 +1,3 @@
 # dotfiles
-  统一管理dotfiles, ~中的dotfiles一般是以ln -fs pwd/.vimrc ~/.vimrc的形式创立的
+  直接运行install脚本最佳
+  clone时请在~文件夹中
