@@ -6,3 +6,5 @@ for file in ${files[@]} ;
 		echo $file
 		ln -sf ~/dotfiles/$file ~/$file
 	done
+		echo lazyvim
+		ln -sf ~/dotfiles/nvim ~/.config/nvim
