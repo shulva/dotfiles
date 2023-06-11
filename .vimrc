@@ -97,7 +97,7 @@ set wrap " 自动折行
 set linebreak " 不会在单词内部折行
 set ruler " 显示当前光标位置
 set showmatch " 括号匹配
-
+:colorscheme desert "颜色方案
 
 " i think behind is useless, so i comment them	
 " nnoremap <Left>  :echoe "Use h"<CR>
