@@ -7,4 +7,5 @@ for file in ${files[@]} ;
 		ln -sf ~/dotfiles/$file ~/$file
 	done
 		echo lazyvim
+		mkdir -p ~/.config
 		ln -sf ~/dotfiles/nvim ~/.config/nvim
