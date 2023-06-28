@@ -14,4 +14,4 @@ ln -sf ~/dotfiles/nvim ~/.config/nvim
 # install zsh and theme
 sudo pacman -Sy zsh
 sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k zsh-completions
-# if nvim can not copy or use clipboard on windows,please install win32yank by scoop
+# if nvim can not copy or use clipboard on windows in wsl,please install win32yank by scoop
