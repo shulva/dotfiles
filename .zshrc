@@ -28,3 +28,4 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
