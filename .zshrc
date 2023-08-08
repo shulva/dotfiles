@@ -29,3 +29,4 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
