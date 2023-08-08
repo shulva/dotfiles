@@ -2,7 +2,7 @@
 
 (lsb_release -ds || cat /etc/*release || uname -om) 2>/dev/null | head -n1
 
-files=(.bashrc .vimrc .tmux.conf .zshrc .gitconfig .p10k.zsh)
+files=(.bashrc .vimrc .tmux.conf .zshrc .gitconfig )
 
 for file in ${files[@]}; do
 	echo $file
