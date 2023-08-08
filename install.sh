@@ -9,9 +9,9 @@ for file in ${files[@]}; do
 	ln -sf ~/dotfiles/$file ~/$file
 done
 
-echo lazyvim
-mkdir -p ~/.config
-ln -sf ~/dotfiles/nvim ~/.config/nvim
+#echo lazyvim
+#mkdir -p ~/.config
+#ln -sf ~/dotfiles/nvim ~/.config/nvim
 
 # install zsh and theme,arch example as following:
 # sudo pacman -Sy zsh
