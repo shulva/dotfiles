@@ -97,15 +97,6 @@ set wrap " 自动折行
 set linebreak " 不会在单词内部折行
 set ruler " 显示当前光标位置
 set showmatch " 括号匹配
-:colorscheme desert "颜色方案
+:colorscheme desert 
+" 如果windows terminal 的<C-v>粘贴与块模式的<C-v>冲突，请修改wsl快捷键配置文件或是重新映射vim按键
 
-" i think behind is useless, so i comment them	
-" nnoremap <Left>  :echoe "Use h"<CR>
-" nnoremap <Right> :echoe "Use l"<CR>
-" nnoremap <Up>    :echoe "Use k"<CR>
-" nnoremap <Down>  :echoe "Use j"<CR>
-" ...and in insert mode
-" inoremap <Left>  <ESC>:echoe "Use h"<CR>
-" inoremap <Right> <ESC>:echoe "Use l"<CR>
-" inoremap <Up>    <ESC>:echoe "Use k"<CR>
-" inoremap <Down>  <ESC>:echoe "Use j"<CR>
