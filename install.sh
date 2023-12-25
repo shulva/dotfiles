@@ -4,14 +4,17 @@
 
 files=(.svlint.toml .bashrc .vimrc .tmux.conf .zshrc .gitconfig .p10k.zsh)
 
+lazyvim_plugins=(flash.lua)
+
+for file in ${lazyvim_plugins[@]}; do
+	echo $file
+	ln -sf ~/dotfiles/$file ~/.config/nvim/lua/plugins/$file
+done
+
 for file in ${files[@]}; do
 	echo $file
 	ln -sf ~/dotfiles/$file ~/$file
 done
-
-#echo lazyvim
-#mkdir -p ~/.config
-#ln -sf ~/dotfiles/nvim ~/.config/nvim
 
 # install zsh and theme,arch example as following:
 # sudo pacman -Sy zsh
